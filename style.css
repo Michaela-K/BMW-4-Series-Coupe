@@ -1,0 +1,381 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+}
+.main{
+    width: 1350px;
+}
+
+:root {
+    --nav-buttons-color: #2f70ba;
+    --grey-border-color:rgb(238, 238, 243);
+    --orange-heading-color: orange;
+  }
+ 
+  /* NAV */
+.nav{
+    font: 1em arial;
+    color: var(--nav-buttons-color);
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+a{
+    color: var(--nav-buttons-color);
+    text-decoration: none;
+}
+.left-nav{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.right-nav{
+    width: 22%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.previous, .next{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.arrow{
+    width: 30px;
+    height: 25px;
+}
+
+/* BID & ANNOUNCEMENTS */
+.bid-announce{
+    border: 20px solid var(--grey-border-color);
+}
+p{
+    display: inline-flex;
+}
+
+/* BID */
+.main-container{
+    width: 1350px;
+}
+.bid{
+    display: flex;
+}
+.image{
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+}
+.under-img{
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    color: var(--nav-buttons-color);
+    font-weight: bold;
+}
+td>a{
+    text-decoration: 2px underline var(--grey-border-color);
+    color: var(--nav-buttons-color);
+    font-weight: bold;
+}
+.cr{
+    border: 1px solid var(--orange-heading-color);
+    text-align: left;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100px;
+    height: 30px;
+    margin: 15px 0px 15px 30px;
+    border-radius: 5px;
+    background-image: -webkit-gradient(linear, left bottom, right bottom, color-stop(0.5, orange), color-stop(0.51, transparent));
+}
+
+
+/* STATS */
+.stats{
+    margin: 10px 0px 60px 20px;
+    flex: 1 1 auto;
+}
+.table1 tr{
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin: 10px 0px;
+    font-size: 0.9em;
+    /* min-width: 350px; */
+    border-spacing: 0px 10px;
+}
+.table1 td{
+    padding: 10px 45px 10px 0px;
+}
+.table1 tr:nth-of-type(odd){
+	font-weight: bold;
+    color: rgb(192, 192, 192);
+}
+.table1 tr:nth-of-type(even){
+	border-bottom: 2px solid gray;                                  /*was working, now not working*/
+    border-left: 2px solid gray;
+    text-decoration: 2px underline var(--grey-border-color);
+    text-underline-offset: 13px;
+} 
+
+/* BID BUTTONS */
+.bid-buttons{
+    display:flex;
+  	flex-direction: column;
+    text-align: center;
+    flex: 1 1 auto;
+}
+.eye{                                             
+    height: 25%;                                                         /*to push down the timer and bid buttons*/
+    display: flex;
+    justify-content: flex-end;
+    align-content: flex-start;
+}
+.green-eye{
+    margin: 10px 40px;
+    width: 25px;
+    height: 20px;
+    cursor: pointer;
+}
+.clock, .info, .file-export{
+    width: 25px;
+    height: 20px;
+    cursor: pointer;
+}
+.file-export{
+    height: 25px;
+    position: relative;
+    top: 7px;
+}
+.countdown{
+	color: orange;
+	font-weight:bold;
+    display: flex;
+    justify-content: center;
+}
+.btn-placebid, 
+.btn-buynow{
+	background-color: var(--nav-buttons-color);
+	color: white;
+	border: var(--nav-buttons-color);
+	border-radius: 5px;
+	padding: 13px;
+	display: block;
+    margin: 8px auto;
+    cursor: pointer;
+}
+.userbid{
+    display: block;
+}
+input[type=text-currency]{
+    width: 30%;
+    padding: 5px;
+    margin: 0px 5px;
+    box-sizing: border-box;
+    background-color: whitesmoke;
+}
+.btn-proxybid{
+	background-color: white;
+	color: var(--nav-buttons-color);
+	border: 3px solid var(--nav-buttons-color);
+	border-radius: 5px;
+	padding: 6px;
+    cursor: pointer;
+}
+
+
+
+/* ANNOUNCEMENT */
+.announce{
+    border-top: 1px solid rgb(236, 233, 233);
+    margin: 0px 20px;
+    height: 200px;
+    overflow: scroll;
+}
+::-webkit-scrollbar {
+     /* Width of vertical scroll bar */
+    width: 12px;
+    /* Height of horizontal scroll bar */
+    height: 15px;
+  }
+::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    background: #cdd2da;
+  }
+
+
+  /* OVERVIEW */
+  .overview{
+    width: 1350px;
+    margin-top: 30px;
+  }
+  .heading{
+    background-color: var(--nav-buttons-color);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 35px;
+    padding: 0px 20px;
+    border-radius: 10px 10px 0px 0px;
+  }
+
+
+  /* TABLE */
+  .table2{
+    margin: 0 auto;
+    border-collapse: collapse;                              
+	font-size: 0.9em;
+    table-layout: fixed;
+    width: 1350px;
+    text-align: left;
+    border-bottom: 1px solid var(--grey-border-color);
+  }
+    th,td {
+    empty-cells: inherit;
+    }
+  
+  .table2 tbody th:first-child{
+	background-color: var(--nav-buttons-color);
+    color: white;
+    border-top-left-radius: 10px;
+    padding: 0px 0px 0px 20px;
+  }
+    .table2 tbody th:last-child{
+    background-color: var(--nav-buttons-color);
+    color: white;
+    border-top-right-radius: 10px;
+    padding: 2px 15px 0px 0px;
+  }
+  .table2 td{
+    padding:  12px 15px;
+  }
+   .table2 tbody tr:nth-of-type(even){
+    background-color: white;
+  }
+  .table2 tbody tr:nth-of-type(odd){
+  background-color: #f3f3f3;
+  }
+   .table2 tbody td:nth-of-type(odd){
+	font-weight: bold;
+	color: var(--nav-buttons-color);
+  }
+
+  .table2 tbody tr td:first-child{
+    border-left: 1px solid var(--grey-border-color);
+  }
+  .table2 tbody tr td:last-child{
+    border-right: 1px solid var(--grey-border-color);  
+  }
+
+
+
+  /* MIDDLE */
+    .middle-container{
+    border: 1em solid var(--grey-border-color);
+    width: min-content;
+    margin-top: 30px;
+    }
+   .mid{
+    width: max-content;                                                  /* not centered - its more to the right*/
+    margin: 0 auto;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+  }
+
+  .hvalue{
+    margin: 0px auto;
+    border-top: 30px solid var(--grey-border-color);                     /*i didnt put margin, the grey space was made up using top-border */
+}
+
+   .condition{
+    border-top: 30px solid var(--grey-border-color); 
+    }
+    .condition>.table2{
+    border-bottom: none;
+    }
+
+
+    /* DAMAGE */
+    .heading2{
+    height: 40px;
+    background-color: var(--grey-border-color);
+    color: var(--nav-buttons-color);
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    }
+    .damage{
+    border-left: 10px solid var(--grey-border-color);
+    margin-left: 20px;
+    border-right: 10px solid var(--grey-border-color);
+    margin-right: 20px;
+    border-bottom: 10px solid var(--grey-border-color);
+    margin-bottom: 20px;
+    }
+
+    .isi{
+    display: flex;
+    }
+   
+    .damagetables{
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+    justify-content: flex-start;
+    }
+
+    .damagetable1, .damagetable2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    empty-cells: inherit;
+    margin: 50px 100px 0px 0px;
+    }
+
+    .table3 td, .table3 tr{
+    empty-cells: inherit;
+    column-width: 250px;
+    padding: 4px;
+    }
+    .table3 tbody td:nth-of-type(odd){
+    font-weight: bold;
+    color: var(--nav-buttons-color);
+    }
+    .table3 tbody tr:first-child td{
+    color: var(--orange-heading-color);
+    font-size: 1.2rem;
+    }
+    
+    /* Wheels & Tires */
+    .wt{
+    display: flex;
+    flex-direction: row;
+    }
+
+    .wttables{
+    width:100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0px 30px 0px 30px;
+    }
+
+    /* TOP RECOMMENDATIONS */
+    .recommendations{
+    display: flex;   
+    flex-direction: row;
+    justify-content: space-around; 
+    margin: 30px 30px 0px 0px;
+    }
+
+   
