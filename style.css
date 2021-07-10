@@ -119,21 +119,21 @@ td>a{
     color: rgb(192, 192, 192);
 }
 .table1 tr:nth-of-type(even){
-	border-bottom: 2px solid gray;                                  /*was working, now not working*/
+    border-bottom: 2px solid gray;                                  /*was working, now not working*/
     border-left: 2px solid gray;
     text-decoration: 2px underline var(--grey-border-color);
     text-underline-offset: 13px;
 } 
 
 /* BID BUTTONS */
-.bid-buttons{
+   .bid-buttons{
     display:flex;
-  	flex-direction: column;
+    flex-direction: column;
     text-align: center;
     flex: 1 1 auto;
 }
 .eye{                                             
-    height: 25%;                                                         /*to push down the timer and bid buttons*/
+    height: 25%;                                                         
     display: flex;
     justify-content: flex-end;
     align-content: flex-start;
@@ -155,19 +155,19 @@ td>a{
     top: 7px;
 }
 .countdown{
-	color: orange;
-	font-weight:bold;
+    color: orange;
+    font-weight:bold;
     display: flex;
     justify-content: center;
 }
 .btn-placebid, 
 .btn-buynow{
-	background-color: var(--nav-buttons-color);
-	color: white;
-	border: var(--nav-buttons-color);
-	border-radius: 5px;
-	padding: 13px;
-	display: block;
+    background-color: var(--nav-buttons-color);
+    color: white;
+    border: var(--nav-buttons-color);
+    border-radius: 5px;
+    padding: 13px;
+    display: block;
     margin: 8px auto;
     cursor: pointer;
 }
@@ -187,7 +187,7 @@ input[type=text-currency]{
 	border: 3px solid var(--nav-buttons-color);
 	border-radius: 5px;
 	padding: 6px;
-    cursor: pointer;
+        cursor: pointer;
 }
 
 
@@ -232,7 +232,7 @@ input[type=text-currency]{
   .table2{
     margin: 0 auto;
     border-collapse: collapse;                              
-	font-size: 0.9em;
+    font-size: 0.9em;
     table-layout: fixed;
     width: 1350px;
     text-align: left;
@@ -243,7 +243,7 @@ input[type=text-currency]{
     }
   
   .table2 tbody th:first-child{
-	background-color: var(--nav-buttons-color);
+    background-color: var(--nav-buttons-color);
     color: white;
     border-top-left-radius: 10px;
     padding: 0px 0px 0px 20px;
@@ -261,7 +261,7 @@ input[type=text-currency]{
     background-color: white;
   }
   .table2 tbody tr:nth-of-type(odd){
-  background-color: #f3f3f3;
+    background-color: #f3f3f3;
   }
    .table2 tbody td:nth-of-type(odd){
 	font-weight: bold;
@@ -294,7 +294,7 @@ input[type=text-currency]{
 
   .hvalue{
     margin: 0px auto;
-    border-top: 30px solid var(--grey-border-color);                     /*i didnt put margin, the grey space was made up using top-border */
+    border-top: 30px solid var(--grey-border-color);                     /*grey space was made using top-border */
 }
 
    .condition{
