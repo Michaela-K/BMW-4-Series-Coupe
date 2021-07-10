@@ -7,6 +7,14 @@ body{
     display: flex;
     justify-content: center;
 }
+
+main{
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
 .main{
     width: 1350px;
 }
@@ -31,7 +39,7 @@ a{
 }
 .left-nav{
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     cursor: pointer;
 }
 .right-nav{
@@ -39,7 +47,7 @@ a{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    align-items: start;
 }
 .previous, .next{
     display: flex;
@@ -55,6 +63,8 @@ a{
 /* BID & ANNOUNCEMENTS */
 .bid-announce{
     border: 20px solid var(--grey-border-color);
+    display: flex;
+    flex-direction: column;
 }
 p{
     display: inline-flex;
@@ -62,7 +72,11 @@ p{
 
 /* BID */
 .main-container{
-    width: 1350px;
+    flex-basis: 1350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-shrink: 1;
 }
 .bid{
     display: flex;
@@ -102,6 +116,9 @@ td>a{
 .stats{
     margin: 10px 0px 60px 20px;
     flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 .table1 tr{
     border-collapse: collapse;
@@ -282,6 +299,9 @@ input[type=text-currency]{
     border: 1em solid var(--grey-border-color);
     width: min-content;
     margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     }
    .mid{
     width: max-content;                                                  /* not centered - its more to the right*/
