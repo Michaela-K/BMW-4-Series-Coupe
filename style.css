@@ -81,6 +81,7 @@ p{
 }
 .bid{
     display: flex;
+    background-color: aliceblue;
 }
 .image{
     display: flex;
@@ -131,6 +132,7 @@ td>a{
 }
 .table1 td{
     padding: 10px 45px 10px 0px;
+    color:  green;
 }
 .table1 tr:nth-of-type(odd){
 	font-weight: bold;
