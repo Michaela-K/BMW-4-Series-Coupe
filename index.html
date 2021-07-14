@@ -15,7 +15,7 @@
         <!-- NAV -->
         <div class="nav">
             <div class="left-nav">
-                <div class="view all vehicle"><a href="#">View All Vehicles</a></div>
+                <div class="all vehicle"><a href="#">View All Vehicles</a></div>
             </div>
             <div class="right-nav">
                 <div class="previous vehicle"><img class="arrow left" src="./icons/angle-left-b.svg"/><a href="#">Previous Vehicle</a></div>
@@ -67,7 +67,7 @@
                     </tbody>
                 </div>
                 <div class="bid-buttons">
-                    <div class="eye"><div class="green-eye"><img src="./icons/green-eye.svg"/></div></div>
+                    <!-- <div class="eye"><div class="green-eye"><img src="./icons/green-eye.svg"/></div></div> -->
                     
                     <p class="countdown"> <img class="clock" src="./icons/clock-three.svg"/>4d 22:04:38</p>
 					<button class="btn-placebid">Place Bid $29,000</button>
@@ -75,9 +75,13 @@
 					<button class="btn-buynow">Buy Now $31,999</button>
 				
                     <form action="#" method="POST">
-                        <p class="userbid">Proxy Bidding<img class="info" src="./icons/info-circle.svg"/></p>
-                        <input type="text-currency" name="currency-field" id="currency-field" pattern="^\$\d{1,3}(,\d{3})*(\.\d+)?$" value="" data-type="currency" placeholder="$400">
-                        <input class="btn-proxybid" type="submit" value="Set Proxy Bid">
+                        <div class="userbid">
+                            <p class="userbid">Proxy Bidding<img class="info" src="./icons/info-circle.svg"/></p>
+                        </div>
+                        <div class="input">
+                            <input type="text-currency" name="currency-field" id="currency-field" pattern="^\$\d{1,3}(,\d{3})*(\.\d+)?$" value="" data-type="currency" placeholder="$400">
+                            <input class="btn-proxybid" type="submit" value="Set Proxy Bid">
+                        </div>
                     </form>
                 </div>
                
@@ -92,70 +96,76 @@
             </div>
         </div>
 
-        <div class="overview"> 
-            <div class="ostats">
-                <table class="table2" width="100%" cellpadding="0" cellspacing="0">
-                    <tbody>
-                        <tr>
-                            <th colspan="7">Overview</th>
-                            <th align="right"><img class="arrow up" src="./icons/arrow-circle-up.svg"/></th>
-                        </tr>
-                        <tr>
-                            <td>Year</td>
-                            <td>2020</td>
-                            <td>Trim Level</td>
-                            <td>SE</td>
-                            <td>Drive Train</td>
-                            <td>Front Wheel Drive</td>
-                            <td>VIN</td>
-                            <td>4T1G11AK4LU336535</td>
-                        </tr>
-                        <tr>
-                            <td>Make</td>
-                            <td>BMW</td>
-                            <td>Odometer</td>
-                            <td>34,032 KM</td>
-                            <td>Exterior Color</td>
-                            <td>White</td>
-                            <td>City</td>
-                            <td>St Eustahce</td>
-                        </tr>
-                        <tr>
-                            <td>Model</td>
-                            <td>430 i</td>
-                            <td>Transmission</td>
-                            <td>A/T</td>
-                            <td>Interior Color</td>
-                            <td>Black</td>
-                            <td>Gas Mileage</td>
-                            <td>--</td>
-                        </tr>
-                        <tr>
-                            <td>Int. Type</td>
-                            <td>Not Specified</td>
-                            <td>Body Style</td>
-                            <td>--</td>
-                            <td>Doors</td>
-                            <td>--</td>
-                            <td>Fuel Type</td>
-                            <td>Not Specified</td>
-                        </tr>
-                        <tr>
-                            <td>MSRP</td>
-                            <td>--</td>
-                            <td>Top Type</td>
-                            <td>--</td>
-                            <td colspan="3">Seating For</td>
-                            <td>--</td>
-                        </tr>
-                    </tbody>
-                </table>
+            <!-- DIV TABLE -->
+            <div class="divTable">
+                <div class="divTableBody">
+                    <div class="divTableRow">
+                        <div class="HeadingCell"> <div class="heading">Overview</div> <div><img class="arrow up" src="./icons/arrow-circle-up.svg"/></div> </div>
+                        <!-- <div class="divTableCell"></div>
+                        <div class="divTableCell"></div>
+                        <div class="divTableCell"></div>
+                        <div class="divTableCell"></div>
+                        <div class="divTableCell"></div>
+                        <div class="divTableCell"></div>
+                        <div class="divTableCell"></div> -->
+                    </div>
+                    <div class="divTableRow">
+                        <div class="divTableCell">Year</div>
+                        <div class="divTableCell">2020</div>
+                        <div class="divTableCell">Trim Level</div>
+                        <div class="divTableCell">SE</div>
+                        <div class="divTableCell">Drive Train</div>
+                        <div class="divTableCell">Front Wheel Drive</div>
+                        <div class="divTableCell">Vin</div>
+                        <div class="divTableCell">4T1G11AK4LU336535</div>
+                    </div>
+                    <div class="divTableRow">
+                        <div class="divTableCell">Make</div>
+                        <div class="divTableCell">BMW</div>
+                        <div class="divTableCell"> Odometer</div>
+                        <div class="divTableCell">34,032 KM</div>
+                        <div class="divTableCell">Exterior Color</div>
+                        <div class="divTableCell">White</div>
+                        <div class="divTableCell">City</div>
+                        <div class="divTableCell">St.Eustache</div>
+                    </div>
+                    <div class="divTableRow">
+                        <div class="divTableCell">Model</div>
+                        <div class="divTableCell">430 i</div>
+                        <div class="divTableCell">Transmission</div>
+                        <div class="divTableCell">A/T</div>
+                        <div class="divTableCell">Interior Color</div>
+                        <div class="divTableCell">Black</div>
+                        <div class="divTableCell">Gas Mileage</div>
+                        <div class="divTableCell">- - </div>
+                    </div>
+                    <div class="divTableRow">
+                        <div class="divTableCell">Int.Type</div>
+                        <div class="divTableCell">Not Specified</div>
+                        <div class="divTableCell">Body Style</div>
+                        <div class="divTableCell">- -</div>
+                        <div class="divTableCell">Doors</div>
+                        <div class="divTableCell">- -</div>
+                        <div class="divTableCell">Fuel Type</div>
+                        <div class="divTableCell">Not specified</div>
+                    </div>
+                    <div class="divTableRow">
+                        <div class="divTableCell">MSRP</div>
+                        <div class="divTableCell">- - </div>
+                        <div class="divTableCell">Top Type</div>
+                        <div class="divTableCell">- -</div>
+                        <div class="divTableCell">Seating For</div>
+                        <div class="divTableCell">- - </div>
+                        <div class="divTableCell">&nbsp;</div>
+                        <div class="divTableCell">&nbsp;</div>
+                        </div>
+                </div>
             </div>
         </div>
     </div>
 
 <!-- MIDDLE -->
-    <div class="middle-container">
+    <!-- <div class="middle-container">
         <div class="mid">
             <table class="table2">
                 <tbody>
@@ -256,10 +266,10 @@
                         <td>  </td>
                     </tr>
                 </tbody>
-            </table>
+            </table> -->
 
             <!-- DAMAGE -->
-            <div class="damage">
+            <!-- <div class="damage">
                 <p class= "heading2">Damage</p>
                 <div class="isi">
                     <div class="layoutimage"><img src="./images/car-layout-1.jpeg" alt="layout" height="450px"></div>
@@ -426,7 +436,11 @@
                 <div class="second"><img src="./images/2017 Jeep Grand Cherokee.jpeg" alt="layout" height="220px"><div class="heading2">2017 Jeep Grand Cherokee SRT</div></div>
                 <div class="third"><img src="./images/2012-Ford-SuperDuty.jpeg" alt="layout" height="220px"><div class="heading2">Ford Super Duty F-350 DRW</div></div>
             </div>
-    </div>
+    </div> -->
 </main>
 </body>
 </html>
+
+
+
+

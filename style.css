@@ -5,19 +5,25 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 main{
   display: flex;
   flex-direction:column;
-  align-items: center;
+  flex-wrap: wrap;
   flex-basis: 1350px;
-  justify-content: flex-start;
+  max-width: 1350px;
+  min-width: none;
 }
 
 .main{
-    width: 1350px;
+  display: flex;
+  flex-direction:column;
+  flex-wrap: wrap;
 }
 
 :root {
@@ -31,7 +37,9 @@ main{
     font: 1em arial;
     color: var(--nav-buttons-color);
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
     margin-top: 20px;
 }
 a{
@@ -42,6 +50,10 @@ a{
     display: flex;
     /* align-items: center; */
     cursor: pointer;
+}
+.vehicle{
+  display: flex;
+  flex-direction: row;
 }
 .right-nav{
     width: 22%;
@@ -65,10 +77,17 @@ a{
 .bid-announce{
     border: 20px solid var(--grey-border-color);
     display: flex;
-    flex-direction: column;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 p{
-    display: inline-flex;
+    display: inline-block;
+}
+.bid{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  overflow-wrap: break-word;
 }
 
 /* BID */
@@ -77,19 +96,29 @@ p{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    flex-wrap: wrap;
     /* flex-shrink: 1; */
 }
 .bid{
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 .image{
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     flex: 1 1 auto;
+    /* display: inline-block; */
+}
+.img{
+    display: inline-block;
 }
 .under-img{
-    display: flex;
-    align-items: center;
+  flex: 1 1 auto;
+    /* display: flex;
+    align-items: center; */
+    display: inline-flex;
     margin-left: 20px;
     color: var(--nav-buttons-color);
     font-weight: bold;
@@ -117,9 +146,15 @@ td>a{
 .stats{
     margin: 10px 0px 60px 20px;
     flex: 1 1 auto;
-    display: flex;
+    /* display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: flex-end; */
+    display: inline-block;
+}
+.table1{
+  display: flex;
+  flex-wrap: wrap;
+  word-wrap: normal;
 }
 .table1 tr{
     border-collapse: collapse;
@@ -147,21 +182,27 @@ td>a{
    .bid-buttons{
     display:flex;
     flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
     text-align: center;
     flex: 1 1 auto;
 }
-.eye{                                             
-    height: 25%;                                                         
+
+/* .eye{                                             
+    height: 25%;     
+    width: min-content;
+    flex: 1 1 auto;                                                    
     display: flex;
     justify-content: flex-end;
     align-content: flex-start;
 }
 .green-eye{
+  display: inline-block;
     margin: 10px 40px;
     width: 25px;
     height: 20px;
     cursor: pointer;
-}
+} */
 .clock, .info, .file-export{
     width: 25px;
     height: 20px;
@@ -177,6 +218,7 @@ td>a{
     font-weight:bold;
     display: flex;
     justify-content: center;
+    display: inline-block;
 }
 .btn-placebid, 
 .btn-buynow{
@@ -188,9 +230,24 @@ td>a{
     display: block;
     margin: 8px auto;
     cursor: pointer;
+    display: inline-block;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 .userbid{
-    display: block;
+  display: inline-block;
+    /* display: flex;
+    flex-direction: row;
+    justify-content: center;*/
+}
+.input{
+  display: inline-block;
+  /* display: flex;
+    flex-direction: row;
+    justify-content: center; */
 }
 input[type=text-currency]{
     width: 30%;
@@ -216,6 +273,10 @@ input[type=text-currency]{
     margin: 0px 20px;
     height: 200px;
     overflow: scroll;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  flex:  1 1 auto;
 }
 ::-webkit-scrollbar {
      /* Width of vertical scroll bar */
@@ -230,9 +291,17 @@ input[type=text-currency]{
 
 
   /* OVERVIEW */
-  .overview{
+  /* .overview{
     width: 1350px;
     margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .ostats{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
   }
   .heading{
     background-color: var(--nav-buttons-color);
@@ -243,55 +312,65 @@ input[type=text-currency]{
     height: 35px;
     padding: 0px 20px;
     border-radius: 10px 10px 0px 0px;
-  }
+  } */
 
 
-  /* TABLE */
-  .table2{
-    margin: 0 auto;
-    border-collapse: collapse;                              
-    font-size: 0.9em;
-    table-layout: fixed;
-    width: 1350px;
-    text-align: left;
-    border-bottom: 1px solid var(--grey-border-color);
-  }
-    th,td {
-    empty-cells: inherit;
-    }
-  
-  .table2 tbody th:first-child{
-    background-color: var(--nav-buttons-color);
-    color: white;
-    border-top-left-radius: 10px;
-    padding: 0px 0px 0px 20px;
-  }
-    .table2 tbody th:last-child{
-    background-color: var(--nav-buttons-color);
-    color: white;
-    border-top-right-radius: 10px;
-    padding: 2px 15px 0px 0px;
-  }
-  .table2 td{
-    padding:  12px 15px;
-  }
-   .table2 tbody tr:nth-of-type(even){
-    background-color: white;
-  }
-  .table2 tbody tr:nth-of-type(odd){
-    background-color: #f3f3f3;
-  }
-   .table2 tbody td:nth-of-type(odd){
-	font-weight: bold;
-	color: var(--nav-buttons-color);
-  }
+  /*DIV TABLE*/
+.divTable{
+  margin-top: 35px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
 
-  .table2 tbody tr td:first-child{
-    border-left: 1px solid var(--grey-border-color);
-  }
-  .table2 tbody tr td:last-child{
-    border-right: 1px solid var(--grey-border-color);  
-  }
+.divTableBody{
+  display: flex;
+  flex-direction: column;
+  border: 1px solid whitesmoke;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.divTableRow{
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 5px 10px 5px 10px;
+  min-height: 35px;
+}
+.divTableRow:first-of-type{
+  background-color: var(--nav-buttons-color);
+  border: 1px solid whitesmoke;
+  border-radius: 8px 8px 0px 0px;
+  color: white;
+  flex-wrap: none;
+  flex-direction: row;
+}
+.divTableRow:nth-of-type(even){
+  background-color: whitesmoke;
+}
+.divTableCell{
+  width: 150px;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.divTableCell:nth-of-type(odd){
+  color: var(--nav-buttons-color);
+  font-weight: bold;
+}
+.HeadingCell{
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+.icon-cell{
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 350px;
+}
 
 
 
@@ -397,6 +476,41 @@ input[type=text-currency]{
     flex-direction: row;
     justify-content: space-around; 
     margin: 30px 30px 0px 0px;
+    }
+
+
+    /* MEDIA QUERIS */
+    @media screen and (max-width: 1000px) {
+      .table2 {
+        border: 0;
+      }
+      .table2 tr {
+        border-bottom: 3px solid #ddd;
+        display: block;
+        margin-bottom: .625em;
+      }
+      
+      .table2 td {
+        border-bottom: 1px solid #ddd;
+        display: block;
+        font-size: .8em;
+        text-align: right;
+      }
+      
+      .table2 td::before {
+        /*
+        * aria-label has no advantage, it won't be read inside a table
+        content: attr(aria-label);
+        */
+        content: attr(data-label);
+        float: left;
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+      
+      .table2 td:last-child {
+        border-bottom: 0;
+      }
     }
 
    
