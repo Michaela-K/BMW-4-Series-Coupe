@@ -11,432 +11,393 @@
 <body>
     <main>
     <div class="main-container">
-
-        <!-- NAV -->
-        <div class="nav">
-            <div class="left-nav">
-                <div class="all vehicle"><a href="#">View All Vehicles</a></div>
+        <div class="holder">
+            <!-- NAV -->
+            <div class="nav">
+                <div class="left-nav">
+                    <div class="all vehicle"><a href="#">View All Vehicles</a></div>
+                </div>
+                <div class="right-nav">
+                    <div class="previous vehicle"><img class="arrow left" src="./icons/angle-left-b.svg"/><a href="#">Previous Vehicle</a></div>
+                    <div class="next vehicle"><a href="#">Next Vehicle</a><img class="arrow right" src="./icons/angle-right-b.svg"/></div>
+                </div>
             </div>
-            <div class="right-nav">
-                <div class="previous vehicle"><img class="arrow left" src="./icons/angle-left-b.svg"/><a href="#">Previous Vehicle</a></div>
-                <div class="next vehicle"><a href="#">Next Vehicle</a><img class="arrow right" src="./icons/angle-right-b.svg"/></div>
-            </div>
-        </div>
-       
-        <!-- AUCTION & ANNOUNCEMENTS -->
-        <div class="bid-announce">
-            <div class="bid">
-                <div class="image"><img src="./images/bmw-screenshot.jpeg" alt="bmw">
-                    <div class="under-img">
-                        <p>View Carfax</p> 
-                        <div class="cr"> <div>CR</div> <div>4.5</div> </div>
+        
+            <!-- AUCTION & ANNOUNCEMENTS -->
+            <div class="bid-announce">
+                <div class="bid">
+                    <div class="image"><img src="./images/bmw-screenshot.jpeg" alt="bmw">
+                        <div class="under-img">
+                            <p>View Carfax</p> 
+                            <div class="cr"> <div>CR</div> <div>4.5</div> </div>
+                        </div>
                     </div>
-                </div>
-                <div class="stats">
-                    <h1> BMW 4 Series Coupe</h1>
-				    <p>KNDPM3AC3L7723530</p>
-					<br>
-                        <table class="table1">
-                            <!-- <tbody> -->
-                                <tr>
-                                    <td>STATUS</td>
-                                    <td>STARTS</td>
-                                </tr>
-                                <tr>
-                                    <td>On Sale</td>
-                                    <td>01/16/21 5:11AM</td>
-                                </tr>
-                                <tr>
-                                    <td>PICKUP</td>
-                                    <td>VEHICLE LOCATION</td>
-                                </tr>
-                                <tr>
-                                    <td>GA-Brookhaven</td>
-                                    <td>At Dealership</td>
-                                </tr>
-                                <tr>
-                                    <td>SELLER</td>
-                                    <td>VEHICLE GROUP</td>
-                                </tr>
-                                <tr>
-                                    <td><a href="#">VW Credit, Inc</a></td>
-                                    <td>Off-Lease</td>
-                                </tr>
-                            <!-- </tbody> -->
-                        </table>
-                    </tbody>
-                </div>
-                <div class="bid-buttons">
-                    <!-- <div class="eye"><div class="green-eye"><img src="./icons/green-eye.svg"/></div></div> -->
+                    <div class="stats">
+                        <h1> BMW 4 Series Coupe</h1>
+                        <p>KNDPM3AC3L7723530</p>
+                        <br>
+                            <table class="table1">
+                                <!-- <tbody> -->
+                                    <tr>
+                                        <td>STATUS</td>
+                                        <td>STARTS</td>
+                                    </tr>
+                                    <tr>
+                                        <td>On Sale</td>
+                                        <td>01/16/21 5:11AM</td>
+                                    </tr>
+                                    <tr>
+                                        <td>PICKUP</td>
+                                        <td>VEHICLE LOCATION</td>
+                                    </tr>
+                                    <tr>
+                                        <td>GA-Brookhaven</td>
+                                        <td>At Dealership</td>
+                                    </tr>
+                                    <tr>
+                                        <td>SELLER</td>
+                                        <td>VEHICLE GROUP</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">VW Credit, Inc</a></td>
+                                        <td>Off-Lease</td>
+                                    </tr>
+                                <!-- </tbody> -->
+                            </table>
+                        </tbody>
+                    </div>
+                    <div class="bid-buttons">
+                        <div class="eye"><div class="green-eye"><img src="./icons/green-eye.svg"/></div></div>
+                        
+                        <p class="countdown"> <img class="clock" src="./icons/clock-three.svg"/>4d 22:04:38</p>
+                        <button class="btn-placebid">Place Bid $29,000</button>
+                        
+                        <button class="btn-buynow">Buy Now $31,999</button>
                     
-                    <p class="countdown"> <img class="clock" src="./icons/clock-three.svg"/>4d 22:04:38</p>
-					<button class="btn-placebid">Place Bid $29,000</button>
-					
-					<button class="btn-buynow">Buy Now $31,999</button>
-				
-                    <form action="#" method="POST">
-                        <div class="userbid">
-                            <p class="userbid">Proxy Bidding<img class="info" src="./icons/info-circle.svg"/></p>
-                        </div>
-                        <div class="input">
-                            <input type="text-currency" name="currency-field" id="currency-field" pattern="^\$\d{1,3}(,\d{3})*(\.\d+)?$" value="" data-type="currency" placeholder="$400">
-                            <input class="btn-proxybid" type="submit" value="Set Proxy Bid">
-                        </div>
-                    </form>
-                </div>
-               
-            </div>
-            <div class="announce">
-                <h3>Announcements</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus quod quae architecto voluptas magni dolore illo quisquam corrupti repudiandae atque sunt enim beatae molestias unde aliquid optio rerum praesentium impedit cupiditate, earum sit aliquam. Distinctio veniam commodi ad, illum voluptates eveniet provident dolores earum excepturi aut corrupti soluta, dolorum iste.</p>
+                        <form action="#" method="POST">
+                            <div class="userbid">
+                                <p class="userbid">Proxy Bidding<img class="info" src="./icons/info-circle.svg"/></p>
+                            </div>
+                            <div class="input">
+                                <input type="text-currency" name="currency-field" id="currency-field" pattern="^\$\d{1,3}(,\d{3})*(\.\d+)?$" value="" data-type="currency" placeholder="$400">
+                                <input class="btn-proxybid" type="submit" value="Set Proxy Bid">
+                            </div>
+                        </form>
+                    </div>
                 
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo, mollitia temporibus, quas exercitationem, sunt dolorem earum inventore odio vel illum quo! Quaerat eum libero obcaecati a, totam minima, similique molestias ad distinctio ratione dolores architecto accusamus perferendis qui cumque ea commodi cum, rem debitis beatae? Vel accusantium laboriosam est perferendis?</p>
+                </div>
+                <div class="announce">
+                    <h3>Announcements</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus quod quae architecto voluptas magni dolore illo quisquam corrupti repudiandae atque sunt enim beatae molestias unde aliquid optio rerum praesentium impedit cupiditate, earum sit aliquam. Distinctio veniam commodi ad, illum voluptates eveniet provident dolores earum excepturi aut corrupti soluta, dolorum iste.</p>
+                    
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo, mollitia temporibus, quas exercitationem, sunt dolorem earum inventore odio vel illum quo! Quaerat eum libero obcaecati a, totam minima, similique molestias ad distinctio ratione dolores architecto accusamus perferendis qui cumque ea commodi cum, rem debitis beatae? Vel accusantium laboriosam est perferendis?</p>
 
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus mollitia ipsa consectetur. Fugiat neque autem laborum, sequi enim dicta quis ducimus, quas magnam officia id pariatur iusto quo perspiciatis excepturi blanditiis optio ut. Unde aliquid excepturi non rem modi, architecto eum consequuntur asperiores odio neque nostrum totam similique libero facilis eveniet eius? Recusandae facilis placeat veritatis amet sapiente autem accusamus. Eaque, corporis hic molestias dolores culpa excepturi non minima adipisci voluptate dolorem veritatis, quibusdam amet unde maiores asperiores ab aliquid aut? Error quia harum consequatur, nisi ex rem fugit repellendus doloremque fuga blanditiis sit voluptatibus officia at, architecto totam modi alias quae officiis nobis quas ipsam esse consectetur! Laborum, quia quam laudantium nulla nostrum quibusdam eaque perspiciatis excepturi illo minus ea consequuntur mollitia cupiditate aspernatur non inventore eveniet. Aliquid necessitatibus possimus animi maiores aliquam et dolor nam? Incidunt sunt, ducimus corrupti reprehenderit sint adipisci tenetur repudiandae blanditiis sapiente animi! Soluta?</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus mollitia ipsa consectetur. Fugiat neque autem laborum, sequi enim dicta quis ducimus, quas magnam officia id pariatur iusto quo perspiciatis excepturi blanditiis optio ut. Unde aliquid excepturi non rem modi, architecto eum consequuntur asperiores odio neque nostrum totam similique libero facilis eveniet eius? Recusandae facilis placeat veritatis amet sapiente autem accusamus. Eaque, corporis hic molestias dolores culpa excepturi non minima adipisci voluptate dolorem veritatis, quibusdam amet unde maiores asperiores ab aliquid aut? Error quia harum consequatur, nisi ex rem fugit repellendus doloremque fuga blanditiis sit voluptatibus officia at, architecto totam modi alias quae officiis nobis quas ipsam esse consectetur! Laborum, quia quam laudantium nulla nostrum quibusdam eaque perspiciatis excepturi illo minus ea consequuntur mollitia cupiditate aspernatur non inventore eveniet. Aliquid necessitatibus possimus animi maiores aliquam et dolor nam? Incidunt sunt, ducimus corrupti reprehenderit sint adipisci tenetur repudiandae blanditiis sapiente animi! Soluta?</p>
+                </div>
             </div>
-        </div>
 
-            <!-- DIV TABLE -->
-            <div class="divTable">
-                <div class="divTableBody">
-                    <div class="divTableRow">
-                        <div class="HeadingCell"> <div class="heading">Overview</div> <div><img class="arrow up" src="./icons/arrow-circle-up.svg"/></div> </div>
-                        <!-- <div class="divTableCell"></div>
-                        <div class="divTableCell"></div>
-                        <div class="divTableCell"></div>
-                        <div class="divTableCell"></div>
-                        <div class="divTableCell"></div>
-                        <div class="divTableCell"></div>
-                        <div class="divTableCell"></div> -->
-                    </div>
-                    <div class="divTableRow">
-                        <div class="divTableCell">Year</div>
-                        <div class="divTableCell">2020</div>
-                        <div class="divTableCell">Trim Level</div>
-                        <div class="divTableCell">SE</div>
-                        <div class="divTableCell">Drive Train</div>
-                        <div class="divTableCell">Front Wheel Drive</div>
-                        <div class="divTableCell">Vin</div>
-                        <div class="divTableCell">4T1G11AK4LU336535</div>
-                    </div>
-                    <div class="divTableRow">
-                        <div class="divTableCell">Make</div>
-                        <div class="divTableCell">BMW</div>
-                        <div class="divTableCell"> Odometer</div>
-                        <div class="divTableCell">34,032 KM</div>
-                        <div class="divTableCell">Exterior Color</div>
-                        <div class="divTableCell">White</div>
-                        <div class="divTableCell">City</div>
-                        <div class="divTableCell">St.Eustache</div>
-                    </div>
-                    <div class="divTableRow">
-                        <div class="divTableCell">Model</div>
-                        <div class="divTableCell">430 i</div>
-                        <div class="divTableCell">Transmission</div>
-                        <div class="divTableCell">A/T</div>
-                        <div class="divTableCell">Interior Color</div>
-                        <div class="divTableCell">Black</div>
-                        <div class="divTableCell">Gas Mileage</div>
-                        <div class="divTableCell">- - </div>
-                    </div>
-                    <div class="divTableRow">
-                        <div class="divTableCell">Int.Type</div>
-                        <div class="divTableCell">Not Specified</div>
-                        <div class="divTableCell">Body Style</div>
-                        <div class="divTableCell">- -</div>
-                        <div class="divTableCell">Doors</div>
-                        <div class="divTableCell">- -</div>
-                        <div class="divTableCell">Fuel Type</div>
-                        <div class="divTableCell">Not specified</div>
-                    </div>
-                    <div class="divTableRow">
-                        <div class="divTableCell">MSRP</div>
-                        <div class="divTableCell">- - </div>
-                        <div class="divTableCell">Top Type</div>
-                        <div class="divTableCell">- -</div>
-                        <div class="divTableCell">Seating For</div>
-                        <div class="divTableCell">- - </div>
-                        <div class="divTableCell">&nbsp;</div>
-                        <div class="divTableCell">&nbsp;</div>
+                <!-- DIV TABLE -->
+                <div class="divTable">
+                    <div class="divTableBody">
+                        <div class="divTableRow">
+                            <div class="HeadingCell"> <div class="heading">Overview</div> <div><img class="arrow up" src="./icons/arrow-circle-up.svg"/></div> </div>
                         </div>
+                        <div class="divTableRow">
+                            <div class="divTableCell">Year</div>
+                            <div class="divTableCell">2020</div>
+                            <div class="divTableCell">Trim Level</div>
+                            <div class="divTableCell">SE</div>
+                            <div class="divTableCell">Drive Train</div>
+                            <div class="divTableCell">Front Wheel Drive</div>
+                            <div class="divTableCell">Vin</div>
+                            <div class="divTableCell">4T1G11AK4LU336535</div>
+                        </div>
+                        <div class="divTableRow">
+                            <div class="divTableCell">Make</div>
+                            <div class="divTableCell">BMW</div>
+                            <div class="divTableCell"> Odometer</div>
+                            <div class="divTableCell">34,032 KM</div>
+                            <div class="divTableCell">Exterior Color</div>
+                            <div class="divTableCell">White</div>
+                            <div class="divTableCell">City</div>
+                            <div class="divTableCell">St.Eustache</div>
+                        </div>
+                        <div class="divTableRow">
+                            <div class="divTableCell">Model</div>
+                            <div class="divTableCell">430 i</div>
+                            <div class="divTableCell">Transmission</div>
+                            <div class="divTableCell">A/T</div>
+                            <div class="divTableCell">Interior Color</div>
+                            <div class="divTableCell">Black</div>
+                            <div class="divTableCell">Gas Mileage</div>
+                            <div class="divTableCell">- - </div>
+                        </div>
+                        <div class="divTableRow">
+                            <div class="divTableCell">Int.Type</div>
+                            <div class="divTableCell">Not Specified</div>
+                            <div class="divTableCell">Body Style</div>
+                            <div class="divTableCell">- -</div>
+                            <div class="divTableCell">Doors</div>
+                            <div class="divTableCell">- -</div>
+                            <div class="divTableCell">Fuel Type</div>
+                            <div class="divTableCell">Not specified</div>
+                        </div>
+                        <div class="divTableRow">
+                            <div class="divTableCell">MSRP</div>
+                            <div class="divTableCell">- - </div>
+                            <div class="divTableCell">Top Type</div>
+                            <div class="divTableCell">- -</div>
+                            <div class="divTableCell">Seating For</div>
+                            <div class="divTableCell">- - </div>
+                            <div class="divTableCell">&nbsp;</div>
+                            <div class="divTableCell">&nbsp;</div>
+                            </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
-<!-- MIDDLE -->
-    <!-- <div class="middle-container">
-        <div class="mid">
-            <table class="table2">
-                <tbody>
-                    <tr>
-                        <th colspan="7"><p>Returned Items</p></th>
-                        <th align="right"><img class="arrow up" src="./icons/arrow-circle-up.svg"/></th>
-                    </tr>
-                    <tr>
-                        <td># of keys</td>
-                        <td>2</td>
-                        <td>Navigation SD Card</td>
-                        <td>Yes</td>
-                        <td>Trailer Hitch</td>
-                        <td>Yes</td>
-                        <td>  </td>
-                        <td>  </td>
-                    </tr>
-                    <tr>
-                        <td>All Headsets</td>
-                        <td>Yes</td>
-                        <td>Owner's Manual</td>
-                        <td>No</td>
-                        <td>Valet Key</td>
-                        <td>Yes</td>
-                        <td>  </td>
-                        <td>  </td>
-                    </tr>
-                    <tr>
-                        <td>Cargo Cover</td>
-                        <td>Yes</td>
-                        <td>Spare Tire</td>
-                        <td>Yes</td>
-                        <td>Wallet Key</td>
-                        <td>Yes</td>
-                        <td>  </td>
-                        <td>  </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
 
-        <div class="hvalue">
-            <table class="table2">
-                <tbody>
-                    <tr>
-                        <th colspan="7"><p>High Value Options</p></th>
-                        <th align="right"><img class="arrow up" src="./icons/arrow-circle-up.svg"/></th>
-                    </tr>
-                    <tr>
-                        <td>Lorem Ipsum</td>
-                        <td>  </td>
-                        <td>Lorem Ipsum</td>
-                        <td>  </td>
-                        <td>Lorem Ipsum</td>
-                        <td>  </td>
-                        <td>Lorem Ipsum</td>
-                        <td>Window Sticker Not available</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-
-        <div class="condition">
-            <table class="table2">
-                <tbody>
-                    <tr>
-                        <th colspan="7"><p>Condition Overview</p></th>
-                        <th align="right"><p>Inspection Report</p> <img class="file-export" src="./icons/file-export.svg"/></th>
-                    </tr>
-                    <tr>
-                        <td>Inspection Date</td>
-                        <td></td>
-                        <td>Lorem Ipsum</td>
-                        <td></td>
-                        <td>Inspection Company</td>
-                        <td></td>
-                        <td>Lorem Ipsum</td>
-                        <td>  </td>
-                    </tr>
-                    <tr>
-                        <td>Frame Damage</td>
-                        <td>  </td>
-                        <td>Lorem Ipsum</td>
-                        <td>  </td>
-                        <td>Driveable</td>
-                        <td>  </td>
-                        <td>Lorem Ipsum</td>
-                        <td>  </td>
-                    </tr>
-                    <tr>
-                        <td>Odor</td>
-                        <td>  </td>
-                        <td>Lorem Ipsum</td>
-                        <td>  </td>
-                        <td>Paint Depth</td>
-                        <td>  </td>
-                        <td>Lorem Ipsum</td>
-                        <td>  </td>
-                    </tr>
-                </tbody>
-            </table> -->
-
-            <!-- DAMAGE -->
-            <!-- <div class="damage">
-                <p class= "heading2">Damage</p>
-                <div class="isi">
-                    <div class="layoutimage"><img src="./images/car-layout-1.jpeg" alt="layout" height="450px"></div>
-                        <div class="damagetables">
-                            <div class="damagetable1">
-                                <table class="table3" >
-                                    <tbody> 
-                                        <tr>
-                                            <td >Rear Bumper Cover</td>
-                                            <td></td>
-                                        </tr>                           
-                                        <tr>
-                                            <td>Description</td>
-                                            <td>Lorem Ipsum</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Damage</td>
-                                            <td>Lorem Ipsum</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Part Cost</td>
-                                            <td>Lorem Ipsum</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Reserve Amount</td>
-                                            <td>Lorem Ipsum</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Total</td>
-                                            <td>Lorem Ipsum</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                                <div class="damageimage1"><img src="./images/damage-image.jpeg" alt="layout"></div>                           
+            <!-- MIDDLE CONTAINER -->
+            <!-- RETURNED ITEMS -->
+            <div class="middle-container">
+                <div class="divTable">
+                    <div class="divTableBody">
+                        <div class="divTableRow">
+                            <div class="HeadingCell"> <div class="heading">Returned Items</div> <div><img class="arrow up" src="./icons/arrow-circle-up.svg"/></div> </div>
                         </div>
-
-                        <div class="damagetable2">
-                                <table class="table3" >
-                                    <tbody>
-                                        <tr>
-                                            <td >Roof</td>
-                                            <td></td>
-                                        </tr>                           
-                                        <tr>
-                                            <td>Description</td>
-                                            <td>Lorem Ipsum</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Damage</td>
-                                            <td>Lorem Ipsum</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Part Cost</td>
-                                            <td>Lorem Ipsum</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Reserve Amount</td>
-                                            <td>Lorem Ipsum</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Total</td>
-                                            <td>Lorem Ipsum</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            <div class="damageimage2"><img src="./images/damage-image.jpeg" alt="layout"></div>
+                        <div class="divTableRow">
+                            <div class="divTableCell"># of Keys</div>
+                            <div class="divTableCell">2</div>
+                            <div class="divTableCell">Navigation SD Card</div>
+                            <div class="divTableCell">Yes</div>
+                            <div class="divTableCell">Trailer hitch</div>
+                            <div class="divTableCell">Yes</div>
+                            <div class="divTableCell"></div>
+                            <div class="divTableCell"></div>
                         </div>
-
-
+                        <div class="divTableRow">
+                            <div class="divTableCell">All Headsets</div>
+                            <div class="divTableCell">Yes</div>
+                            <div class="divTableCell">Owner's Manual</div>
+                            <div class="divTableCell">No</div>
+                            <div class="divTableCell">Valet Key</div>
+                            <div class="divTableCell">Yes</div>
+                            <div class="divTableCell"></div>
+                            <div class="divTableCell"></div>
+                        </div>
+                        <div class="divTableRow">
+                            <div class="divTableCell">Cargo Cover</div>
+                            <div class="divTableCell">Yes</div>
+                            <div class="divTableCell">Spare Tire</div>
+                            <div class="divTableCell">Yes</div>
+                            <div class="divTableCell">Wallet Key</div>
+                            <div class="divTableCell">Yes</div>
+                            <div class="divTableCell"></div>
+                            <div class="divTableCell"></div>
+                        </div>
                     </div>
                 </div>
-                <div class="wheels">
-                    <p class= "heading2">Tires & Wheels</p>
-                    <div class="wt">
-                        <div class="layoutimage"><img src="./images/car-layout-1.jpeg" alt="layout" height="450px"></div>
-                            <div class="wttables">
-                                <div class="wttable1">
-                                    <table class="table3" >
-                                        <tbody> 
-                                            <tr>
-                                                <td>Left Front Tire</td>
-                                                <td></td>
-                                            </tr>                           
-                                            <tr>
-                                                <td>Brand</td>
-                                                <td>Lorem Ipsum</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Tread</td>
-                                                <td>Lorem Ipsum</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Wheel Type</td>
-                                                <td>Lorem Ipsum</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Size</td>
-                                                <td>Lorem Ipsum</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Load</td>
-                                                <td>Lorem Ipsum</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Speed</td>
-                                                <td>Lorem Ipsum</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
+                <!-- HIGH VALUE OPTIONS -->
+                <div class="divTable">
+                    <div class="divTableBody">
+                        <div class="divTableRow">
+                            <div class="HeadingCell"> <div class="heading">High Value Options</div> <div><img class="arrow up" src="./icons/arrow-circle-up.svg"/></div> </div>
+                        </div>
+                        <div class="divTableRow">
+                            <div class="divTableCell">Lorem Ipsum</div>
+                            <div class="divTableCell"></div>
+                            <div class="divTableCell">Lorem Ipsum</div>
+                            <div class="divTableCell"></div>
+                            <div class="divTableCell">Lorem Ipsum</div>
+                            <div class="divTableCell"></div>
+                            <div class="divTableCell">Lorem Ipsum</div>
+                            <div class="divTableCell">Windows Sticker not available</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- CONDITION OVERVIEW -->
+                <div class="divTable">
+                    <div class="divTableBody">
+                        <div class="divTableRow">
+                            <div class="HeadingCell"> <div class="heading">Condition Overview</div> <div>Inspection Report <img class="arrow up" src="./icons/file-export.svg"/></div> </div>
+                        </div>
+                        <div class="divTableRow">
+                            <div class="divTableCell">Inspection Date</div>
+                            <div class="divTableCell"></div>
+                            <div class="divTableCell">Lorem Ipsum</div>
+                            <div class="divTableCell"></div>
+                            <div class="divTableCell">Inspection Company</div>
+                            <div class="divTableCell"></div>
+                            <div class="divTableCell">Lorem Ipsum</div>
+                            <div class="divTableCell"></div>
+                        </div>
+                        <div class="divTableRow">
+                            <div class="divTableCell">Frame Damage</div>
+                            <div class="divTableCell"></div>
+                            <div class="divTableCell">Lorem Ipsum</div>
+                            <div class="divTableCell"></div>
+                            <div class="divTableCell">Driveable</div>
+                            <div class="divTableCell"></div>
+                            <div class="divTableCell">Lorem Ipsum</div>
+                            <div class="divTableCell"></div>
+                        </div>
+                        <div class="divTableRow">
+                            <div class="divTableCell">Odour</div>
+                            <div class="divTableCell"></div>
+                            <div class="divTableCell">Lorem Ipsum</div>
+                            <div class="divTableCell"></div>
+                            <div class="divTableCell">Paint Depth</div>
+                            <div class="divTableCell"></div>
+                            <div class="divTableCell">Lorem Ipsum</div>
+                            <div class="divTableCell"></div>
+                        </div>
+                    </div>
+                    <div class="damage">
+                        <div class="heading2">Damage</div>
+                        <div class="damage-details">
+                            <div class="layout">
+                                <div class="layout-img"><img src="./images/car-layout-1.jpeg" alt="layout"></div>
                             </div>
-    
-                            <div class="wttable2">
-                                    <table class="table3" >
-                                        <tbody>
-                                            <tr>
-                                                <td>Right Front Tire</td>
-                                                <td></td>
-                                            </tr>                           
-                                            <tr>
-                                                <td>Brand</td>
-                                                <td>Lorem Ipsum</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Tread</td>
-                                                <td>Lorem Ipsum</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Wheel Type</td>
-                                                <td>Lorem Ipsum</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Size</td>
-                                                <td>Lorem Ipsum</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Load</td>
-                                                <td>Lorem Ipsum</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Speed</td>
-                                                <td>Lorem Ipsum</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
+                            <div class="details-container">
+                                <div class="details">
+                                    <div class="stats">
+                                        <div class="divTable2">
+                                                <div class="divTableRow2">
+                                                    <div class="HeadingCell2"> <div class="heading">Rear Bumper Cover</div> </div>
+                                                </div>
+                                            <div class="divTableBody2">
+                                                <div class="divTableRow1of2">
+                                                    <div class="divTableCell2">Description</div>
+                                                    <div class="divTableCell2">Damage</div>
+                                                    <div class="divTableCell2">Part Cost</div>
+                                                    <div class="divTableCell2">Reserve Amount</div>
+                                                    <div class="divTableCell2">Total</div>
+                                                </div>
+                                                <div class="divTableRow2of2">
+                                                    <div class="divTableCell2">Lorem Ipsum</div>
+                                                    <div class="divTableCell2">Lorem Ipsum</div>
+                                                    <div class="divTableCell2">Dorem Ipsum</div>
+                                                    <div class="divTableCell2">Lorem Ipsum</div>
+                                                    <div class="divTableCell2">Lorem Ipsum</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="damage-image"><img src="./images/damage-image.jpeg" alt="picture showing damage to vehicle"></div>
+                                </div>
+                                <div class="details">
+                                    <div class="stats">
+                                        <div class="divTable2">
+                                                <div class="divTableRow2">
+                                                    <div class="HeadingCell2"> <div class="heading">Rear Bumper Cover</div> </div>
+                                                </div>
+                                            <div class="divTableBody2">
+                                                <div class="divTableRow1of2">
+                                                    <div class="divTableCell2">Description</div>
+                                                    <div class="divTableCell2">Damage</div>
+                                                    <div class="divTableCell2">Part Cost</div>
+                                                    <div class="divTableCell2">Reserve Amount</div>
+                                                    <div class="divTableCell2">Total</div>
+                                                </div>
+                                                <div class="divTableRow2of2">
+                                                    <div class="divTableCell2">Lorem Ipsum</div>
+                                                    <div class="divTableCell2">Lorem Ipsum</div>
+                                                    <div class="divTableCell2">Dorem Ipsum</div>
+                                                    <div class="divTableCell2">Lorem Ipsum</div>
+                                                    <div class="divTableCell2">Lorem Ipsum</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="damage-image"><img src="./images/damage-image.jpeg" alt="picture showing damage to vehicle"></div>
+                                </div>
                             </div>
-            </div>
-        </div>
-      </div>
-      
-    </div>
+                        </div>
+                    </div>
 
-    <div class="bottom"> 
-            <table class="table2" width="100%" cellpadding="0" cellspacing="0">
-                <tbody>
-                    <tr>
-                        <th colspan="7">Your Top Recommendations</th>
-                        <th align="right"><img class="arrow up" src="./icons/arrow-circle-up.svg"/></th>
-                    </tr>
-                </tbody>
-            </table>
-            <div class="recommendations">
-                <div class="first"><img src="./images/2012-Ford-SuperDuty.jpeg" alt="layout" height=" 220px"> <div class="heading2">2012 Ford Super Duty F-350 DRW 
-                    <br>King-Ranch</div></div>
-                <div class="second"><img src="./images/2017 Jeep Grand Cherokee.jpeg" alt="layout" height="220px"><div class="heading2">2017 Jeep Grand Cherokee SRT</div></div>
-                <div class="third"><img src="./images/2012-Ford-SuperDuty.jpeg" alt="layout" height="220px"><div class="heading2">Ford Super Duty F-350 DRW</div></div>
+                    <!-- WHEELS AND TIRES -->
+                    <div class="wheelsAndTires">
+                        <div class="heading2">Wheels And Tires</div>
+                        <div class="wt-details">
+                            <div class="layout">
+                                <div class="layout-img"><img src="./images/car-layout-1.jpeg" alt="layout"></div>
+                            </div>
+                            <div class="wt-container">
+                                <div class="details">
+                                    <div class="stats2">
+                                        <div class="left-tire">
+                                            <div class="divTable2">
+                                                    <div class="divTableRow2">
+                                                        <div class="HeadingCell2"> <div class="heading">Left Front Tire</div> </div>
+                                                    </div>
+                                                <div class="divTableBody2">
+                                                    <div class="divTableRow1of2">
+                                                        <div class="divTableCell2">Description</div>
+                                                        <div class="divTableCell2">Damage</div>
+                                                        <div class="divTableCell2">Part Cost</div>
+                                                        <div class="divTableCell2">Reserve Amount</div>
+                                                        <div class="divTableCell2">Total</div>
+                                                    </div>
+                                                    <div class="divTableRow2of2">
+                                                        <div class="divTableCell2">Lorem Ipsum</div>
+                                                        <div class="divTableCell2">Lorem Ipsum</div>
+                                                        <div class="divTableCell2">Dorem Ipsum</div>
+                                                        <div class="divTableCell2">Lorem Ipsum</div>
+                                                        <div class="divTableCell2">Lorem Ipsum</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="right-tire">
+                                            <div class="divTable2">
+                                                    <div class="divTableRow2">
+                                                        <div class="HeadingCell2"> <div class="heading">Right Front Tire</div> </div>
+                                                    </div>
+                                                <div class="divTableBody2">
+                                                    <div class="divTableRow1of2">
+                                                        <div class="divTableCell2">Description</div>
+                                                        <div class="divTableCell2">Damage</div>
+                                                        <div class="divTableCell2">Part Cost</div>
+                                                        <div class="divTableCell2">Reserve Amount</div>
+                                                        <div class="divTableCell2">Total</div>
+                                                    </div>
+                                                    <div class="divTableRow2of2">
+                                                        <div class="divTableCell2">Lorem Ipsum</div>
+                                                        <div class="divTableCell2">Lorem Ipsum</div>
+                                                        <div class="divTableCell2">Dorem Ipsum</div>
+                                                        <div class="divTableCell2">Lorem Ipsum</div>
+                                                        <div class="divTableCell2">Lorem Ipsum</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                 </div>
             </div>
-    </div> -->
+            
+                <div class="recommendationTable">
+                        <div class="divTableRow">
+                            <div class="HeadingCell"> <div class="heading">Your Top Recommendations</div> <div><img class="arrow up" src="./icons/arrow-circle-up.svg"/></div> </div>
+                        </div>
+                        <div class="recommendations">
+                            <div class="recommendation1">
+                                <div class="vehicle1"><div class="image"><img src="./images/2012-Ford-SuperDuty.jpeg" alt="2012 Ford Super Duty">2012 Ford Super Duty</div>
+                            </div>
+                            <div class="recommendation2">
+                                <div class="vehicle2"><div class="image"><img src="./images/2017 Jeep Grand Cherokee.jpeg" alt="2017 Jeep Grand Cherokee">2017 Jeep Grand Cherokee</div>
+                            </div>
+                            <div class="recommendation3">
+                                <div class="vehicle3"><div class="image"><img src="./images/2012-Ford-SuperDuty.jpeg" alt="2012 Ford Super Duty">2012 Ford Super Duty</div>
+                            </div>
+                        </div>
+                </div>
+            
+    </div>
 </main>
 </body>
 </html>
